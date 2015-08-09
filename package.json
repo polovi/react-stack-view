@@ -1,0 +1,32 @@
+{
+  "name": "react-stack-view",
+  "version": "0.0.1",
+  "description": "React component",
+  "main": "lib/react-stack-view.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack --colors --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polovi/react-stack-view.git"
+  },
+  "keywords": [
+    "react",
+    "react-component"
+  ],
+  "author": "Tomas Polovincak <polovincak.tomas@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polovi/react-stack-view/issues"
+  },
+  "homepage": "https://github.com/polovi/react-stack-view#readme",
+  "dependencies": {
+    "babel-runtime": "^5.8.20",
+    "react": "^0.14.0-beta3"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "babel-core": "^5.8.21",
+    "babel-loader": "^5.3.2"
+  }
+}
