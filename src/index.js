@@ -28,6 +28,22 @@ class StackView extends Component {
 		}
 	}
 
+  at(index) {
+    return this.state.components[index];
+  }
+
+  indexOf(Component) {
+    return this.state.components.indexOf(Component);
+  }
+
+  insert(index, Component) {
+    var {components} = this.state;
+    components.splice(index, 0, Component);
+    this.setState({
+      components: components
+    });
+  }
+
   push(Component) {
     this.setState({
       components: this.state.components.concat(Component)
@@ -42,6 +58,17 @@ class StackView extends Component {
     }
   }
 
+  remove(Component) {
+    var index = this.indexOf(Component);
+    if (index) {
+      var {components} = this.state;
+      components.splice(index, 1);
+      this.setState({
+        components: components
+      });
+    }
+  }
+
   replace(components) {
     this.setState({
       components: components
@@ -50,6 +77,10 @@ class StackView extends Component {
 
   count() {
     return this.state.components.length;
+  }
+
+  top() {
+    return this.state.components.slice(-1).pop();
   }
 
   render() {

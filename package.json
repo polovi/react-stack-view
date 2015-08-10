@@ -1,6 +1,6 @@
 {
   "name": "react-stack-view",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "View stack component for React.js",
   "main": "lib/react-stack-view.js",
   "scripts": {
